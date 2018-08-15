@@ -652,22 +652,3 @@ out_scores, out_boxes, out_classes = predict(sess, "test.jpg")
 # </table>
 
 # 
-
-# <font color='blue'>
-# **What you should remember**:
-# - YOLO is a state-of-the-art object detection model that is fast and accurate
-# - It runs an input image through a CNN which outputs a 19x19x5x85 dimensional volume. 
-# - The encoding can be seen as a grid where each of the 19x19 cells contains information about 5 boxes.
-# - You filter through all the boxes using non-max suppression. Specifically: 
-#     - Score thresholding on the probability of detecting a class to keep only accurate (high probability) boxes
-#     - Intersection over Union (IoU) thresholding to eliminate overlapping boxes
-# - Because training a YOLO model from randomly initialized weights is non-trivial and requires a large dataset as well as lot of computation, we used previously trained model parameters in this exercise. If you wish, you can also try fine-tuning the YOLO model with your own dataset, though this would be a fairly non-trivial exercise. 
-
-# **References**: The ideas presented in this notebook came primarily from the two YOLO papers. The implementation here also took significant inspiration and used many components from Allan Zelener's github repository. The pretrained weights used in this exercise came from the official YOLO website. 
-# - Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi - [You Only Look Once: Unified, Real-Time Object Detection](https://arxiv.org/abs/1506.02640) (2015)
-# - Joseph Redmon, Ali Farhadi - [YOLO9000: Better, Faster, Stronger](https://arxiv.org/abs/1612.08242) (2016)
-# - Allan Zelener - [YAD2K: Yet Another Darknet 2 Keras](https://github.com/allanzelener/YAD2K)
-# - The official YOLO website (https://pjreddie.com/darknet/yolo/) 
-
-# **Car detection dataset**:
-# <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The Drive.ai Sample Dataset</span> (provided by drive.ai) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. We are especially grateful to Brody Huval, Chih Hu and Rahul Patel for collecting and providing this dataset. 
