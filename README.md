@@ -1,5 +1,6 @@
 # RNNApplicationsCoursera
 
-1.A car detection system based on YOLOv2 algorithm with accurate non-max suppression \
-2.A novel artistic images with neural style transfer algorithm and optimized a cost function to get pixel values \
-3.A face recognition and verification system using 128-dimensional encodings and triplet loss
+1.Built a character level language model to create new dinosaur names, Applied a LSTM to jazz music generation\
+2.Used word vector representations to build an Emojifier, Debiased gender based word vectors\
+3.Synthesized and processed audio recordings for \textbf{trigger word detection} and trained a trigger word detection model\
+4.Employed Attention model to build a NMT model to translate human readable dates to machine readable dates\
